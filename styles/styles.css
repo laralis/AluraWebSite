@@ -1,0 +1,159 @@
+body {
+  background-color: var(--bg);
+}
+header {
+  display: flex;
+  height: fit-content;
+  width: 100dvw;
+  justify-content: space-between;
+  background-color: var(--purple-light);
+  padding: 1rem;
+}
+header button img {
+  height: 2.8rem;
+}
+header button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+header .logo img {
+  height: 3.6rem;
+  background-color: transparent;
+}
+header .logo h1 {
+  font-size: 2rem;
+  font-family: "EB Garamond", serif;
+  color: var(--text-gray);
+}
+#Home {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #9fcbf4 39.02%, #ead8fc 100%);
+  padding-bottom: 2rem;
+  font-family: "EB Garamond", serif;
+}
+#Home .content {
+  padding-inline: 2rem;
+}
+#Home .content-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 3rem 3.4rem;
+  color: var(--white);
+  font-weight: 400;
+}
+#Home .content-title span {
+  border: 1px solid var(--white);
+  padding-block: 0.6rem;
+  padding-inline: 1.8rem;
+  border-radius: 100%;
+  font-size: 1.8rem;
+}
+#Home .content-title h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+#Home h2 {
+  color: var(--white);
+  font-weight: 400;
+  line-height: 44px;
+  font-size: 5.1rem;
+  width: 20rem;
+  margin-bottom: 3rem;
+}
+#Home p {
+  color: var(--text-gray);
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+#About {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.3rem;
+}
+#About h2 {
+  color: var(--blue);
+  font-family: "EB Garamond", serif;
+  font-size: 3.6rem;
+  padding-inline: 1.6rem;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 4rem;
+}
+#About .center img {
+  border-radius: 90px;
+  margin-bottom: 4rem;
+}
+#About h3 {
+  color: var(--text-gray);
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+#About p {
+  color: var(--text-gray);
+  font-size: 1.6rem;
+  padding-inline: 1.6rem;
+  font-family: "Noto Sans JP", sans-serif;
+  margin-bottom: 2.4rem;
+}
+
+#About button,#Products button {
+  border: 1px solid transparent;
+  border-radius: 90px;
+  padding-block: 1.6rem;
+  padding-inline: 5rem;
+  background-color: var(--white);
+  box-shadow: 0px 4px 5px 0px rgba(133, 178, 218, 0.1);
+  color: var(--blue);
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+#Products {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.3rem;
+}
+#Products h2 {
+  color: var(--blue);
+  font-family: "EB Garamond", serif;
+  font-size: 3.6rem;
+  padding-inline: 1.6rem;
+}
+#Products .center {
+  padding-inline: 1.7rem;
+}
+#Products .center img {
+  width: 350px;
+  padding: 1.7rem;
+}
+#Products h3 {
+  color: var(--text-gray);
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+#Products p {
+  color: var(--text-gray);
+  font-size: 1.6rem;
+  font-family: "Noto Sans JP", sans-serif;
+  margin-bottom: 2.4rem;
+}
