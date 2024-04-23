@@ -4,7 +4,7 @@ body {
 header {
   display: flex;
   height: fit-content;
-  width: 100dvw;
+  width: 99dvw;
   justify-content: space-between;
   background-color: var(--purple-light);
   padding: 1rem;
@@ -113,7 +113,8 @@ header .logo h1 {
   margin-bottom: 2.4rem;
 }
 
-#About button,#Products button {
+#About button,
+#Products button {
   border: 1px solid transparent;
   border-radius: 90px;
   padding-block: 1.6rem;
@@ -124,6 +125,13 @@ header .logo h1 {
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
 }
+#Products button:hover {
+  background-color: var(--pink-light);
+  color: var(--white);
+  transition: background-color,color 2s;
+
+}
+
 #Products {
   display: flex;
   flex-direction: column;
@@ -140,16 +148,23 @@ header .logo h1 {
 }
 #Products .center img {
   width: 350px;
-  padding: 1.7rem;
+  border-radius: 30px;
+  background: linear-gradient(to bottom, var(--blue),var(--purple-light), var(--pink-light));
+  padding: 3px;
+  margin-bottom: 2rem;
 }
 #Products h3 {
-  color: var(--text-gray);
+  /* color: var(--text-gray); */
   font-size: 2rem;
   text-transform: uppercase;
 
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
   margin-bottom: 1.6rem;
+  background-image: linear-gradient(to bottom, var(--pink), rgb(64, 114, 157));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #Products p {
   color: var(--text-gray);

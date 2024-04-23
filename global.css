@@ -10,6 +10,10 @@
   --text-gray: #666666;
   --blue: #6e95b8;
   --bg: #f4fafd;
+  --pink: rgb(232, 90, 118);
+  --pink-light:rgb(195, 123, 138);;
+  --purple-dark: #302f4d;
+  --yellow: #ffef9f;
 }
 body {
   font-size: 1.6rem;
