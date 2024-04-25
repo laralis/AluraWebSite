@@ -11,9 +11,13 @@
   --blue: #6e95b8;
   --bg: #f4fafd;
   --pink: rgb(232, 90, 118);
-  --pink-light:rgb(195, 123, 138);;
+  --pink-light: rgb(195, 123, 138);
   --purple-dark: #302f4d;
   --yellow: #ffef9f;
+  --noto: "Noto Sans JP", sans-serif;
+  --inter: "Inter", sans-serif;
+  --EB: "EB Garamond", serif;
+  --roboto: "Roboto", sans-serif;
 }
 body {
   font-size: 1.6rem;

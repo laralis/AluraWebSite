@@ -10,23 +10,44 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/carrossel.css" />
+    <link rel="stylesheet" href="./styles/sr-only.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/responsive-tablet.css"
+      media="(min-width:760px)"
+    />
     <title>Éclatant Beauté</title>
   </head>
   <body>
     <header>
       <button class="menu">
+        <!-- <input type="checkbox" id="menu-mobile" />
+        <label for="menu-mobile"> -->
         <img src="./assets/menu.svg" alt="Menu" />
+        <!-- </label> -->
       </button>
+      <!-- <nav class="menu-mob">
+        <img src="./assets/close-button.svg" alt="Menu" />
+        <h2>Éclatant Beauté</h2>
+      </nav> -->
       <div class="logo">
         <img src="./assets/logo.png" alt="Logo Éclatant Beauté" />
         <h1>Éclatant Beauté</h1>
       </div>
-      <button class="menu">
-        <img src="./assets/btn-cart.svg" alt="Go to shopping cart" />
-      </button>
+      <div class="end">
+        <nav class="menu-desktop">
+          <a href="#About">Concept</a>
+          <a href="#Products">Products</a>
+          <a href="#Most_Wanted">Most Wanted</a>
+        </nav>
+        <button class="add-to-card">
+          <img src="./assets/btn-cart.svg" alt="Go to shopping cart" />
+        </button>
+      </div>
     </header>
     <section id="Home">
       <div id="galery">
@@ -42,9 +63,9 @@
             alt="Image of some skin care products"
           />
           <img
-          src="./assets/hero-photo.png"
-          alt="Image of a woman taking a sun bath"
-        />
+            src="./assets/hero-photo.png"
+            alt="Image of a woman taking a sun bath"
+          />
         </div>
       </div>
       <div class="content">
@@ -58,25 +79,29 @@
     </section>
     <section id="About">
       <h2>Concept</h2>
-      <div class="center">
+      <div class="center line">
         <img src="./assets/diamond.png" alt="Image of a lavender" />
+        <div class="content">
+          <h3>Empowering Women with Luxurious Skincare Solutions</h3>
+          <p>
+            We're committed to providing an array of luxurious and effective
+            skincare solutions crafted to enhance your natural beauty and
+            nurture your skin's vitality. From invigorating cleansers to
+            revitalizing serums and weightless moisturizers, our collection is
+            meticulously curated to meet your skincare needs. Because we
+            understand that skincare isn't just a routine—it's a self-care
+            ritual that empowers you to embrace your radiance.
+          </p>
+          <button>View More</button>
+        </div>
 
-        <h3>Empowering Women with Luxurious Skincare Solutions</h3>
-        <p>
-          We're committed to providing an array of luxurious and effective
-          skincare solutions crafted to enhance your natural beauty and nurture
-          your skin's vitality. From invigorating cleansers to revitalizing
-          serums and weightless moisturizers, our collection is meticulously
-          curated to meet your skincare needs. Because we understand that
-          skincare isn't just a routine—it's a self-care ritual that empowers
-          you to embrace your radiance.
-        </p>
-
-        <button>View More</button>
       </div>
     </section>
     <section id="Products">
       <h2>Products</h2>
+      <div class="products_container">
+
+  
       <div class="center">
         <img src="./assets/product7.jpeg" alt="Image of a product" />
 
@@ -160,6 +185,134 @@
 
         <button>View More</button>
       </div>
+      </div>
     </section>
+    <section id="Most_Wanted">
+      <h2>Most Wanted</h2>
+      <div class="Most_Wanted_container">
+        <div class="border">
+          <div class="product center">
+            <img src="./assets/img1.jpeg" alt="ClearSkin Tonic" />
+            <span class="tag">Night</span>
+            <h3>ClearSkin Tonic</h3>
+            <p>
+              A refreshing and purifying formula that helps balance the skin and
+              minimize pores.
+            </p>
+            <span class="price"><strong>$ 95</strong>,00</span>
+          </div>
+        </div>
+        <div class="border">
+          <div class="product center">
+            <img src="./assets/img3.jpeg" alt="RadiantGlow Serum" />
+            <span class="tag">Day</span>
+            <h3>RadiantGlow Serum</h3>
+            <p>
+              An advanced formula designed to deeply nourish and rejuvenate the
+              skin.
+            </p>
+            <span class="price"><strong>$ 72</strong>,00</span>
+          </div>
+        </div>
+        <div class="border">
+          <div class="product center">
+            <img src="./assets/img2.jpeg" alt="YouthRenew Cream" />
+            <span class="tag">Night</span>
+            <h3>YouthRenew Cream</h3>
+            <p>
+              A luxurious cream infused with potent anti-aging ingredients to
+              visibly diminish wrinkles and restore youthful vitality to the
+              skin.
+            </p>
+            <span class="price"><strong>$ 130</strong>,00</span>
+          </div>
+        </div>
+        <div class="border">
+          <div class="product center">
+            <img src="./assets/img4.jpeg" alt="GlowGuard Sunscreen" />
+            <span class="tag">Day</span>
+            <h3>GlowGuard Sunscreen</h3>
+            <p>
+              A lightweight, non-greasy formula providing broad-spectrum
+              protection against harmful UV rays to the skin.
+            </p>
+            <span class="price"><strong>$ 95</strong>,00</span>
+          </div>
+        </div>
+        <div class="border">
+          <div class="product center">
+            <img src="./assets/img7.jpeg" alt="HydraBoost Moisturizer" />
+            <span class="tag">Night</span>
+            <h3>HydraBoost Moisturizer</h3>
+            <p>
+              A deeply hydrating formula infused with nourishing ingredients to
+              replenish moisture levels and leave skin feeling soft, smooth, and
+              revitalized.
+            </p>
+            <span class="price"><strong>$ 75</strong>,00</span>
+          </div>
+        </div>
+        <div class="border">
+          <div class="product center">
+            <img src="./assets/img5.jpeg" alt="PureEssence Moisturizer" />
+            <span class="tag">All Day</span>
+            <h3>PureEssence Moisturizer</h3>
+            <p>
+              A gentle yet potent formula crafted to deliver pure hydration and
+              essential nutrients for a radiant, healthy-looking complexion.
+            </p>
+            <span class="price"><strong>$ 60</strong>,00</span>
+          </div>
+        </div>
+        <div class="border">
+          <div class="product center">
+            <img src="./assets/img6.jpeg" alt="ZenGlow Balm" />
+            <span class="tag">Night</span>
+            <h3>ZenGlow Balm</h3>
+            <p>
+              A soothing balm infused with calming ingredients to restore
+              balance and promote a serene, radiant complexion.
+            </p>
+            <span class="price"><strong>$ 75</strong>,00</span>
+          </div>
+        </div>
+        <div class="border">
+          <div class="product center">
+            <img src="./assets/img8.jpeg" alt="DewyGlow Cream" />
+
+            <span class="tag">All Day</span>
+            <h3>DewyGlow Cream</h3>
+            <p>
+              A luxurious cream infused with hydrating ingredients to impart a
+              luminous glow while revitalizing the skin.
+            </p>
+            <span class="price"><strong>$ 60</strong>,00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="content">
+        <h2>Éclatant Beauté</h2>
+        <h3>Concept</h3>
+        <h3>Products</h3>
+        <h3>Most wanted</h3>
+        <div class="socialLinks">
+          <a href="#">
+            <label for="logo-instagram" class="sr-only">Logo Instagram</label>
+            <i class="ph ph-instagram-logo" id="logo-instagram"></i>
+          </a>
+          <a href="#">
+            <label for="logo-youtube" class="sr-only">Logo Youtube</label>
+            <i class="ph ph-youtube-logo" id="logo-youtube"></i>
+          </a>
+          <a href="#">
+            <label for="logo-X" class="sr-only">Logo X</label>
+            <i class="ph ph-x-logo" id="logo-X"></i>
+          </a>
+        </div>
+        <p>@ Éclatant Beauté. All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

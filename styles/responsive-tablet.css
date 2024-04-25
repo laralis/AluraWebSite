@@ -1,0 +1,110 @@
+@media (min-width: 760px) {
+  header {
+    padding-block: 1rem;
+    padding-inline: 5rem;
+  }
+  header .menu {
+    display: none;
+  }
+  header .menu-desktop {
+    display: flex;
+    gap: 4rem;
+  }
+  header .menu-desktop a {
+    text-decoration: none;
+    color: var(--text-gray);
+    font-size: 1.8rem;
+    font-family: var(--inter);
+    cursor: pointer;
+  }
+  header .end {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: end;
+  }
+  header .logo img {
+    height: 5.6rem;
+  }
+  header .logo h1 {
+    font-size: 2.4rem;
+  }
+  #Home {
+    padding-bottom: 2rem;
+    height: fit-content;
+  }
+  #Home .content {
+    padding-block: 2rem;
+    padding-inline: 5rem;
+  }
+  #Home .content-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 0rem 1.4rem;
+    font-weight: 400;
+  }
+  #Home h2 {
+    line-height: 8rem;
+    font-size: 9.3rem;
+    width: 40rem;
+    margin-bottom: 3rem;
+  }
+  #Home p {
+    font-size: 2.2rem;
+    font-family: var(--roboto);
+    line-height: 4.4rem;
+    padding-block: 3rem 8rem;
+  }
+  #About,#Products,#Most_Wanted {
+    margin-top: 9rem;
+  }
+  #About h2,
+  #Products h2,
+  #Most_Wanted h2 {
+    padding-inline: 5rem;
+  }
+  .line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding-inline: 12rem;
+    padding-block: 9rem;
+    gap: 8rem;
+  }
+  #About .content{
+    width: 40rem;
+  }
+  #Products .products_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 5rem;
+  }
+  #Products .center{
+    align-items: start;
+    justify-content: start;
+  }
+  #Products .center img {
+    width: 40rem;
+  }
+  #Products h3 {
+    font-size: 2.4rem;  
+    margin-bottom: 1.6rem;
+  }
+  .Most_Wanted_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    max-width: 100dvw;
+  }
+  #Most_Wanted .product {
+    color: var(--text-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1.5rem;
+    background-color: var(--white);
+    border-radius: 1.5rem;
+    cursor: pointer;
+  }
+}

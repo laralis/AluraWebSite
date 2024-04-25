@@ -1,6 +1,6 @@
 #galery {
   width: 100dvw;
-  height:250px;
+  height: 300px;
   overflow: hidden;
 }
 #galery #photos {
@@ -11,9 +11,8 @@
   animation-iteration-count: infinite;
 }
 #galery #photos img {
-  width:19.9%;
+  width: 19.9%;
   height: 300px;
- 
 }
 @keyframes slider {
   0% {
@@ -31,16 +30,25 @@
   50% {
     margin-left: -200%;
   }
-  70%{
+  70% {
     margin-left: -200%;
   }
-  75%{
+  75% {
     margin-left: -300%;
   }
-  95%{
+  95% {
     margin-left: -300%;
   }
-  100%{
+  100% {
     margin-left: -400%;
+  }
+}
+@media (min-width: 760px) {
+  #galery {
+    height: 450px; 
+  }
+  #galery #photos img {
+    width: 19.9%;
+    height: 450px;
   }
 }

@@ -9,6 +9,17 @@ header {
   background-color: var(--purple-light);
   padding: 1rem;
 }
+/* header .menu-mob {
+  display: none;
+}
+#menu-mobile:checked + .menu-mob{
+
+  display: none;
+  background-color: red;
+} */
+header .menu-desktop{
+  display: none;
+}
 header button img {
   height: 2.8rem;
 }
@@ -28,7 +39,7 @@ header .logo img {
 }
 header .logo h1 {
   font-size: 2rem;
-  font-family: "EB Garamond", serif;
+  font-family: var(--EB);
   color: var(--text-gray);
 }
 #Home {
@@ -36,10 +47,11 @@ header .logo h1 {
   flex-direction: column;
   background: linear-gradient(180deg, #9fcbf4 39.02%, #ead8fc 100%);
   padding-bottom: 2rem;
-  font-family: "EB Garamond", serif;
+  font-family: var(--EB);
 }
 #Home .content {
   padding-inline: 2rem;
+  cursor: pointer;
 }
 #Home .content-title {
   display: flex;
@@ -72,16 +84,18 @@ header .logo h1 {
 #Home p {
   color: var(--text-gray);
   font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--roboto);
 }
 #About {
   display: flex;
   flex-direction: column;
   margin-top: 4.3rem;
 }
-#About h2 {
+#About h2,
+#Products h2,
+#Most_Wanted h2 {
   color: var(--blue);
-  font-family: "EB Garamond", serif;
+  font-family: var(--EB);
   font-size: 3.6rem;
   padding-inline: 1.6rem;
 }
@@ -96,12 +110,19 @@ header .logo h1 {
   border-radius: 90px;
   margin-bottom: 4rem;
 }
+#About .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 4rem;
+}
 #About h3 {
   color: var(--text-gray);
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: var(--noto);
   font-weight: 500;
   margin-bottom: 1.6rem;
 }
@@ -109,7 +130,7 @@ header .logo h1 {
   color: var(--text-gray);
   font-size: 1.6rem;
   padding-inline: 1.6rem;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: var(--noto);
   margin-bottom: 2.4rem;
 }
 
@@ -123,13 +144,12 @@ header .logo h1 {
   box-shadow: 0px 4px 5px 0px rgba(133, 178, 218, 0.1);
   color: var(--blue);
   font-size: 1.6rem;
-  font-family: "Inter", sans-serif;
+  font-family: var(--inter);
 }
 #Products button:hover {
   background-color: var(--pink-light);
   color: var(--white);
-  transition: background-color,color 2s;
-
+  transition: background-color, color 2s;
 }
 
 #Products {
@@ -137,28 +157,27 @@ header .logo h1 {
   flex-direction: column;
   margin-top: 4.3rem;
 }
-#Products h2 {
-  color: var(--blue);
-  font-family: "EB Garamond", serif;
-  font-size: 3.6rem;
-  padding-inline: 1.6rem;
-}
+
 #Products .center {
   padding-inline: 1.7rem;
 }
 #Products .center img {
   width: 350px;
   border-radius: 30px;
-  background: linear-gradient(to bottom, var(--blue),var(--purple-light), var(--pink-light));
+  background: linear-gradient(
+    to bottom,
+    var(--blue),
+    var(--purple-light),
+    var(--pink-light)
+  );
   padding: 3px;
   margin-bottom: 2rem;
 }
 #Products h3 {
-  /* color: var(--text-gray); */
   font-size: 2rem;
   text-transform: uppercase;
 
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: var(--noto);
   font-weight: 500;
   margin-bottom: 1.6rem;
   background-image: linear-gradient(to bottom, var(--pink), rgb(64, 114, 157));
@@ -169,7 +188,114 @@ header .logo h1 {
 #Products p {
   color: var(--text-gray);
   font-size: 1.6rem;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: var(--noto);
   margin-bottom: 2.4rem;
 }
-/* font-family: "Inter", sans-serif; */
+.Most_Wanted_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 80rem;
+}
+#Most_Wanted .border {
+  background: linear-gradient(
+    to bottom,
+    var(--blue),
+    var(--purple-light),
+    var(--pink-light)
+  );
+  padding: 2px;
+  border-radius: 1.5rem;
+  height: max-content;
+  max-width: 30rem;
+  margin-inline: auto;
+  margin-block: 4rem;
+}
+#Most_Wanted .product {
+  color: var(--text-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1.5rem;
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+#Most_Wanted .border:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+#Most_Wanted .product .tag {
+  text-transform: uppercase;
+  border: 1px solid var(--purple-light);
+  background-color: var(--purple-light);
+  padding-block: 0.6rem;
+  padding-inline: 1.8rem;
+  border-radius: 100%;
+  font-size: 1.8rem;
+  position: absolute;
+  margin-top: 16rem;
+}
+#Most_Wanted .product img {
+  width: 18rem;
+  border-radius: 30px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+#Most_Wanted .product h3 {
+  font-size: 2rem;
+  font-family: var(--noto);
+}
+#Most_Wanted .product p {
+  text-align: center;
+  padding-inline: 2rem;
+  color: var(--text-gray);
+  font-family: var(--EB);
+  font-size: 1.6rem;
+  line-height: 95%;
+}
+#Most_Wanted .product .price {
+  font-family: var(--inter);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+#Most_Wanted .product .price strong {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+footer {
+  background: linear-gradient(180deg, #9fcbf4 39.02%, #ead8fc 100%);
+  color: var(--text-gray);
+}
+footer .content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.6rem;
+  gap: 1.6rem;
+}
+footer h2 {
+  padding-top: 5.1rem;
+  font-size: 3rem;
+}
+footer h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-family: var(--inter);
+}
+footer .socialLinks {
+  display: flex;
+  gap: 2.8rem;
+}
+footer .socialLinks a {
+  text-decoration: none;
+  color: var(--text-gray);
+}
+footer .socialLinks i {
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+footer p {
+  line-height: 2.8rem;
+  font-family: var(--inter);
+  font-size: 1.6rem;
+}
