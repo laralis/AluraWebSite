@@ -20,20 +20,47 @@
       href="./styles/responsive-tablet.css"
       media="(min-width:760px)"
     />
+    <link
+      rel="stylesheet"
+      href="./styles/responsive-desktop.css"
+      media="(min-width:900px)"
+    />
+
     <title>Éclatant Beauté</title>
   </head>
   <body>
     <header>
-      <button class="menu">
-        <!-- <input type="checkbox" id="menu-mobile" />
-        <label for="menu-mobile"> -->
-        <img src="./assets/menu.svg" alt="Menu" />
-        <!-- </label> -->
-      </button>
-      <!-- <nav class="menu-mob">
-        <img src="./assets/close-button.svg" alt="Menu" />
-        <h2>Éclatant Beauté</h2>
-      </nav> -->
+      <div class="menu">
+        <input type="checkbox" id="menu-mobile" />
+        <label for="menu-mobile">
+          <img src="./assets/menu.svg" alt="Menu" />
+        </label>
+      </div>
+      <nav class="menu-mob">
+        <div class="header">
+          <img src="./assets/close-button.svg" alt="Menu" />
+          <h2>Éclatant Beauté</h2>
+        </div>
+        <nav class="links">
+          <a href="#About">Concept</a>
+          <a href="#Products">Products</a>
+          <a href="#Most_Wanted">Most Wanted</a>
+          <div class="socialLinks">
+            <a href="https://www.instagram.com/" target="_blank">
+              <label for="logo-instagram" class="sr-only">Logo Instagram</label>
+              <i class="ph ph-instagram-logo" id="logo-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <label for="logo-youtube" class="sr-only">Logo Youtube</label>
+              <i class="ph ph-youtube-logo" id="logo-youtube"></i>
+            </a>
+            <a href="https://twitter.com/?lang=pt-br" target="_blank">
+              <label for="logo-X" class="sr-only">Logo X</label>
+              <i class="ph ph-x-logo" id="logo-X"></i>
+            </a>
+          </div>
+        </nav>
+      </nav>
       <div class="logo">
         <img src="./assets/logo.png" alt="Logo Éclatant Beauté" />
         <h1>Éclatant Beauté</h1>
@@ -57,7 +84,7 @@
             alt="Image of a woman taking a sun bath"
           />
           <img src="./assets/product9.jpeg" alt="Image of a brush" />
-          <img src="./assets/cover.jpeg" alt="Image a woman looking back" />
+          <img src="./assets/product3.jpeg" alt="Image a woman looking back" />
           <img
             src="./assets/product7.jpeg"
             alt="Image of some skin care products"
@@ -94,97 +121,95 @@
           </p>
           <button>View More</button>
         </div>
-
       </div>
     </section>
     <section id="Products">
       <h2>Products</h2>
       <div class="products_container">
+        <div class="center">
+          <img src="./assets/product7.jpeg" alt="Image of a product" />
 
-  
-      <div class="center">
-        <img src="./assets/product7.jpeg" alt="Image of a product" />
+          <h3>RadiantRevive Complete Skincare Kit</h3>
+          <p>
+            The RadiantRevive Complete Skincare Kit provides a comprehensive
+            approach to skincare, delivering essential products for deep
+            cleansing, intense hydration, and rejuvenation, ensuring radiant and
+            revitalized skin with just a few simple steps.
+          </p>
 
-        <h3>RadiantRevive Complete Skincare Kit</h3>
-        <p>
-          The RadiantRevive Complete Skincare Kit provides a comprehensive
-          approach to skincare, delivering essential products for deep
-          cleansing, intense hydration, and rejuvenation, ensuring radiant and
-          revitalized skin with just a few simple steps.
-        </p>
+          <button>View More</button>
+        </div>
+        <div class="center">
+          <img src="./assets/product6.jpeg" alt="Image of a product" />
 
-        <button>View More</button>
-      </div>
-      <div class="center">
-        <img src="./assets/product6.jpeg" alt="Image of a product" />
+          <h3>GlowElixir Renewal Serum</h3>
+          <p>
+            The GlowElixir Renewal Serum is a potent formula designed to
+            rejuvenate and revitalize the skin, reducing the appearance of fine
+            lines and promoting a radiant complexion. Infused with powerful
+            antioxidants and nourishing ingredients, it enhances skin elasticity
+            and restores a youthful glow.
+          </p>
 
-        <h3>GlowElixir Renewal Serum</h3>
-        <p>
-          The GlowElixir Renewal Serum is a potent formula designed to
-          rejuvenate and revitalize the skin, reducing the appearance of fine
-          lines and promoting a radiant complexion. Infused with powerful
-          antioxidants and nourishing ingredients, it enhances skin elasticity
-          and restores a youthful glow.
-        </p>
+          <button>View More</button>
+        </div>
+        <div class="center">
+          <img src="./assets/product5.jpeg" alt="Image of a product" />
 
-        <button>View More</button>
-      </div>
-      <div class="center">
-        <img src="./assets/product5.jpeg" alt="Image of a product" />
+          <h3>DreamySkin Night Repair Cream</h3>
+          <p>
+            DreamySkin Night Repair Cream is a luxurious overnight treatment
+            that deeply nourishes and replenishes the skin while you sleep,
+            promoting a smoother, firmer complexion by morning. Infused with
+            hydrating ingredients and potent antioxidants, it helps repair and
+            rejuvenate tired-looking skin, unveiling a revitalized and radiant
+            appearance.
+          </p>
 
-        <h3>DreamySkin Night Repair Cream</h3>
-        <p>
-          DreamySkin Night Repair Cream is a luxurious overnight treatment that
-          deeply nourishes and replenishes the skin while you sleep, promoting a
-          smoother, firmer complexion by morning. Infused with hydrating
-          ingredients and potent antioxidants, it helps repair and rejuvenate
-          tired-looking skin, unveiling a revitalized and radiant appearance.
-        </p>
+          <button>View More</button>
+        </div>
+        <div class="center">
+          <img src="./assets/product4.jpeg" alt="Image of a product" />
 
-        <button>View More</button>
-      </div>
-      <div class="center">
-        <img src="./assets/product4.jpeg" alt="Image of a product" />
+          <h3>HeavenlyGlow Brightening Eye Cream</h3>
+          <p>
+            HeavenlyGlow Brightening Eye Cream is a lightweight yet powerful
+            formula designed to diminish dark circles, puffiness, and fine lines
+            around the delicate eye area, revealing a refreshed and youthful
+            look. Infused with brightening agents and nourishing botanicals, it
+            hydrates and revitalizes the skin, leaving it with a luminous glow.
+          </p>
 
-        <h3>HeavenlyGlow Brightening Eye Cream</h3>
-        <p>
-          HeavenlyGlow Brightening Eye Cream is a lightweight yet powerful
-          formula designed to diminish dark circles, puffiness, and fine lines
-          around the delicate eye area, revealing a refreshed and youthful look.
-          Infused with brightening agents and nourishing botanicals, it hydrates
-          and revitalizes the skin, leaving it with a luminous glow.
-        </p>
+          <button>View More</button>
+        </div>
+        <div class="center">
+          <img src="./assets/product3.jpeg" alt="Image of a product" />
 
-        <button>View More</button>
-      </div>
-      <div class="center">
-        <img src="./assets/product3.jpeg" alt="Image of a product" />
+          <h3>PetalMist Rose Radiance Tonic</h3>
+          <p>
+            PetalMist Rose Radiance Tonic is a delicate facial mist housed in a
+            petite, square glass bottle, delivering a refreshing burst of
+            hydrating rose essence with each spritz. Infused with botanical
+            extracts, it revitalizes and tones the skin, leaving behind a
+            natural, radiant glow.
+          </p>
 
-        <h3>PetalMist Rose Radiance Tonic</h3>
-        <p>
-          PetalMist Rose Radiance Tonic is a delicate facial mist housed in a
-          petite, square glass bottle, delivering a refreshing burst of
-          hydrating rose essence with each spritz. Infused with botanical
-          extracts, it revitalizes and tones the skin, leaving behind a natural,
-          radiant glow.
-        </p>
+          <button>View More</button>
+        </div>
+        <div class="center">
+          <img src="./assets/product1.jpeg" alt="Image of a product" />
 
-        <button>View More</button>
-      </div>
-      <div class="center">
-        <img src="./assets/product1.jpeg" alt="Image of a product" />
+          <h3>CrystalClear Exfoliating Scrub</h3>
+          <p>
+            CrystalClear Exfoliating Scrub is a gentle yet effective exfoliant
+            enriched with micro-crystals, designed to buff away dead skin cells
+            and impurities, revealing a smooth and radiant complexion. Infused
+            with nourishing botanicals, it leaves the skin feeling refreshed,
+            revitalized, and deeply cleansed.
+          </p>
 
-        <h3>CrystalClear Exfoliating Scrub</h3>
-        <p>
-          CrystalClear Exfoliating Scrub is a gentle yet effective exfoliant
-          enriched with micro-crystals, designed to buff away dead skin cells
-          and impurities, revealing a smooth and radiant complexion. Infused
-          with nourishing botanicals, it leaves the skin feeling refreshed,
-          revitalized, and deeply cleansed.
-        </p>
-
-        <button>View More</button>
-      </div>
+          <button>View More</button>
+        </div>
       </div>
     </section>
     <section id="Most_Wanted">
@@ -292,27 +317,29 @@
       </div>
     </section>
     <footer>
-      <div class="content">
+      <div class="inline">
         <h2>Éclatant Beauté</h2>
-        <h3>Concept</h3>
-        <h3>Products</h3>
-        <h3>Most wanted</h3>
-        <div class="socialLinks">
-          <a href="#">
-            <label for="logo-instagram" class="sr-only">Logo Instagram</label>
-            <i class="ph ph-instagram-logo" id="logo-instagram"></i>
-          </a>
-          <a href="#">
-            <label for="logo-youtube" class="sr-only">Logo Youtube</label>
-            <i class="ph ph-youtube-logo" id="logo-youtube"></i>
-          </a>
-          <a href="#">
-            <label for="logo-X" class="sr-only">Logo X</label>
-            <i class="ph ph-x-logo" id="logo-X"></i>
-          </a>
+        <div class="content">
+          <a href="#About">Concept</a>
+          <a href="#Products">Products</a>
+          <a href="#Most_Wanted">Most wanted</a>
+          <div class="socialLinks">
+            <a href="https://www.instagram.com/" target="_blank">
+              <label for="logo-instagram" class="sr-only">Logo Instagram</label>
+              <i class="ph ph-instagram-logo" id="logo-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <label for="logo-youtube" class="sr-only">Logo Youtube</label>
+              <i class="ph ph-youtube-logo" id="logo-youtube"></i>
+            </a>
+            <a href="https://twitter.com/?lang=pt-br" target="_blank">
+              <label for="logo-X" class="sr-only">Logo X</label>
+              <i class="ph ph-x-logo" id="logo-X"></i>
+            </a>
+          </div>
         </div>
-        <p>@ Éclatant Beauté. All Rights Reserved.</p>
       </div>
+      <p>@ Éclatant Beauté. All Rights Reserved.</p>
     </footer>
   </body>
 </html>

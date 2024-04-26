@@ -56,7 +56,9 @@
     line-height: 4.4rem;
     padding-block: 3rem 8rem;
   }
-  #About,#Products,#Most_Wanted {
+  #About,
+  #Products,
+  #Most_Wanted {
     margin-top: 9rem;
   }
   #About h2,
@@ -73,15 +75,19 @@
     padding-block: 9rem;
     gap: 8rem;
   }
-  #About .content{
+  #About .line img{
+    width: 38rem;
+    border-radius: 20rem;
+  }
+  #About .content {
     width: 40rem;
   }
-  #Products .products_container{
+  #Products .products_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-inline: 5rem;
   }
-  #Products .center{
+  #Products .center {
     align-items: start;
     justify-content: start;
   }
@@ -89,12 +95,12 @@
     width: 40rem;
   }
   #Products h3 {
-    font-size: 2.4rem;  
+    font-size: 2.4rem;
     margin-bottom: 1.6rem;
   }
   .Most_Wanted_container {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     max-width: 100dvw;
   }
   #Most_Wanted .product {
@@ -106,5 +112,25 @@
     background-color: var(--white);
     border-radius: 1.5rem;
     cursor: pointer;
+  }
+  footer {
+    padding-inline: 12rem;
+  }
+  footer .inline {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .content {
+    padding-left: 5rem;
+    gap: 2.6rem;
+    padding-block: 5rem;
+  }
+  footer .socialLinks {
+    gap: 2rem;
+    
+  }
+  footer p {
+    display: flex;
+    padding-bottom: 3rem;
   }
 }

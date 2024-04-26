@@ -1,0 +1,104 @@
+@media (min-width: 900px) {
+  header {
+    padding-block: 2rem;
+    padding-inline: 8rem;
+  }
+
+  header .logo img {
+    height: 6.6rem;
+  }
+  header .logo h1 {
+    font-size: 3.4rem;
+  }
+  #Home {
+    padding-bottom: 2rem;
+    height: fit-content;
+  }
+  #Home .content {
+    padding-block: 4rem;
+    padding-inline: 8rem;
+  }
+
+  #About h2,
+  #Products h2,
+  #Most_Wanted h2 {
+    padding-inline: 8rem;
+  }
+  .line {
+    padding-inline: 16rem;
+    padding-block: 9rem;
+    gap: 10rem;
+  }
+  #About .line img{
+    width: 33rem;
+    border-radius: 20rem;
+  }
+  #About .content {
+    width: 50rem;
+  }
+
+  #Products .center {
+    align-items: center;
+    justify-content: center;
+    max-width: 50rem;
+    text-align: start;
+    height: fit-content;
+  }
+  #Products .center h3{
+    text-align: center;
+    max-width: 40rem;
+  }
+  #Products .center p{
+    text-align: start;
+  }
+  #Products .center img {
+    width: 40rem;
+  }
+
+  .Most_Wanted_container {
+
+    grid-template-columns: 1fr 1fr 1fr ;
+    max-width: 100dvw;
+  }
+  #Most_Wanted .product {
+
+    height: 42rem;
+  }
+  footer {
+    padding-inline: 12rem;
+  }
+  footer .inline {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .content {
+    padding-left: 5rem;
+    gap: 2.6rem;
+    padding-block: 5rem;
+  }
+  footer .socialLinks {
+    gap: 2rem;
+    
+  }
+  footer p {
+    display: flex;
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 1400px) {
+  .Most_Wanted_container {
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+
+  #Products .products_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-inline: 5rem;
+  }
+  #Products .center {
+    align-items: top;
+    
+  }
+}

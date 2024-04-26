@@ -52,3 +52,20 @@
     height: 450px;
   }
 }
+@media (min-width: 900px) {
+  #galery {
+    height: 500px; 
+   
+
+  }
+  #photos{
+    display: flex;
+    align-items:end;
+    
+  }
+  #galery #photos img {
+    width: 19.9%;
+    height: 700px;
+    
+  }
+}
