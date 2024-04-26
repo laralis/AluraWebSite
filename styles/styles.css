@@ -4,25 +4,14 @@ body {
 header {
   display: flex;
   height: fit-content;
-  width: 99dvw;
+ 
   justify-content: space-between;
   background-color: var(--purple-light);
   padding: 1rem;
 }
-header .menu-mob {
-  display: none;
-  position: absolute;
-  width: 100dvw;
-  background-color: var(--purple-light);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-#menu-mobile:checked ~ .menu-mob {
-  display: flex;
-  width: 100px;
-  background-color: red;
+
+#menu-mobile:checked ~ header .menu_mob {
+  display: block;
 }
 header .menu-mob .header {
   display: flex;
@@ -191,6 +180,7 @@ header .logo h1 {
   color: var(--blue);
   font-size: 1.6rem;
   font-family: var(--inter);
+  cursor: pointer;
 }
 #Products button:hover {
   background-color: var(--pink-light);

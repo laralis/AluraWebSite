@@ -3,7 +3,7 @@
     padding-block: 1rem;
     padding-inline: 5rem;
   }
-  header .menu {
+  header .menu_mobile {
     display: none;
   }
   header .menu-desktop {
@@ -83,13 +83,16 @@
     width: 40rem;
   }
   #Products .products_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
     padding-inline: 5rem;
+    align-items: center;
+    justify-content: center;
   }
   #Products .center {
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
   }
   #Products .center img {
     width: 40rem;
