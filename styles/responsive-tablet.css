@@ -75,7 +75,7 @@
     padding-block: 9rem;
     gap: 8rem;
   }
-  #About .line img{
+  #About .line img {
     width: 38rem;
     border-radius: 20rem;
   }
@@ -130,10 +130,34 @@
   }
   footer .socialLinks {
     gap: 2rem;
-    
   }
   footer p {
     display: flex;
     padding-bottom: 3rem;
+  }
+  .menu-mobile-over-screen {
+    display: none;
+  }
+  .shopping-cart .logo {
+    gap: 1rem;
+   
+  }
+  .shopping-cart .inline{
+    margin-top: 2rem;
+  }
+  .shopping-cart .logo h1 {
+    font-size: 3rem;
+  }
+  .shopping-cart .logo img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .shopping-cart .close-shopping-cart img{
+    width: 4rem;
+    height: 4rem;
+  }
+  .shopping-cart .products{
+    margin-left: 8rem;
+    padding-top: 4rem;
   }
 }

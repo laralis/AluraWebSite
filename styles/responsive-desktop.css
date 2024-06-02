@@ -29,7 +29,7 @@
     padding-block: 9rem;
     gap: 10rem;
   }
-  #About .line img{
+  #About .line img {
     width: 33rem;
     border-radius: 20rem;
   }
@@ -44,11 +44,11 @@
     text-align: start;
     height: fit-content;
   }
-  #Products .center h3{
+  #Products .center h3 {
     text-align: center;
     max-width: 40rem;
   }
-  #Products .center p{
+  #Products .center p {
     text-align: start;
   }
   #Products .center img {
@@ -56,12 +56,10 @@
   }
 
   .Most_Wanted_container {
-
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     max-width: 100dvw;
   }
   #Most_Wanted .product {
-
     height: 42rem;
   }
   footer {
@@ -78,7 +76,6 @@
   }
   footer .socialLinks {
     gap: 2rem;
-    
   }
   footer p {
     display: flex;
@@ -87,9 +84,7 @@
 }
 @media (min-width: 1400px) {
   .Most_Wanted_container {
-
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
   }
 
   #Products .products_container {
@@ -99,6 +94,35 @@
   }
   #Products .center {
     align-items: top;
-    
+  }
+  .shopping-cart {
+    display: flex;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+    position: fixed;
+    right: 0;
+    left: auto;
+    top: 0;
+    width: 50rem;
+  }
+  .shopping-cart.visible {
+    display: block;
+    background-color: var(--purple-light);
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+    width: 50rem;
+    position: fixed;
+    right: 0;
+    left: auto;
+    top: 0;
+  }
+  .shopping-cart .logo{
+    display: none;
+  }
+  .shopping-cart .inline{
+    display: flex;
+    justify-content: end;
+    margin-right: 8rem;
+    padding-top: 4rem;
   }
 }
