@@ -8,10 +8,24 @@ const buttonShoppingCart = document.querySelector(".add-to-card");
 buttonShoppingCart.addEventListener("click", toggleShoppingCart);
 buttonMenu.addEventListener("click", toggleMenu);
 buttonCloseMenuMobile.addEventListener("click", toggleMenu);
-buttonCloseShoppingCart.addEventListener("click", toggleShoppingCart)
+buttonCloseShoppingCart.addEventListener("click", toggleShoppingCart);
 function toggleMenu() {
   menuMobile.classList.toggle("visible");
 }
 function toggleShoppingCart() {
   shoppingCart.classList.toggle("visible");
 }
+
+async function fetchProducts() {
+  try {
+    const response = await fetch("http://localhost:3000/products");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const products = await response.json();
+    console.log(products);
+  } catch (error) {
+    console.error("Failed to fetch products:", error);
+  }
+}
+fetchProducts();
