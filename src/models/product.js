@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 const productSchema = new mongoose.Schema(
   {
     id: { type: mongoose.Schema.Types.ObjectId },
+    urlImagem: { type: String, required: true },
     nome: { type: String, required: true },
     descricao: { type: String },
     preco: { type: Number },
